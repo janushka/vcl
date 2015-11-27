@@ -25,6 +25,15 @@ var path = d3.select("svg")
         this._current = d;
     });
 
+// Line chart in arc... as an example
+
+d3.select("g")
+    .append("path")
+    .attr("d", "M-170,-1.301713357635163e-13 L 1.0409497792752502e-14,-170")
+    .style("opacity", .5)
+    .style("stroke", "black")
+    .style("stroke-width", "2px");
+
 var D3Component = {
     updatePieChart: function (event) {
         event.preventDefault();
